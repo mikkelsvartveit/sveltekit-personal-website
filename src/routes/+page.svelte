@@ -1,12 +1,13 @@
 <script>
-  import portraitImage from "$lib/images/portrait.jpg";
+  import Link from "$lib/components/Link.svelte";
   import SocialIcon from "$lib/components/SocialIcon.svelte";
+
+  import portraitImage from "$lib/images/portrait.jpg";
   import facebookIcon from "$lib/icons/facebook-icon.png";
   import twitterIcon from "$lib/icons/twitter-icon.png";
   import instagramIcon from "$lib/icons/instagram-icon.png";
   import vscoIcon from "$lib/icons/vsco-icon.png";
   import githubIcon from "$lib/icons/github-icon.png";
-  import Link from "$lib/components/Link.svelte";
 
   const socialMedia = [
     {
@@ -76,13 +77,4 @@
       alt="Portrait of Mikkel"
     />
   </div>
-</div>
-
-<div class="flex justify-center">
-  <p class="text-xs text-slate-400">
-    Made in a breeze thanks to
-    <Link href="https://kit.svelte.dev/" target="_blank">SvelteKit</Link>
-    and
-    <Link href="https://tailwindcss.com/" target="_blank">Tailwind CSS</Link>.
-  </p>
 </div>
