@@ -44,12 +44,12 @@
       Hi, I'm Mikkel 👋
     </h1>
 
-    <p class="my-4">
+    <p class="my-4 font-serif text-lg text-slate-700">
       I am a Computer Science student from Norway and this is my playground.
       Thanks for stopping by!
     </p>
 
-    <p class="my-4">
+    <p class="my-4 font-serif text-lg text-slate-700">
       Here you will find some
       <Link href="/programming">programming projects</Link>, a small
       <Link href="/photography">collection of photos</Link>
@@ -58,12 +58,12 @@
       about stuff that interests me.
     </p>
 
-    <p class="my-4">
+    <p class="my-4 font-serif text-lg text-slate-700">
       Want to get in touch?
       <Link href="mailto:hi@mikkelsvartveit.com">Contact me.</Link>
     </p>
 
-    <div class="mt-8 -mx-2">
+    <div class="mt-8 space-x-3">
       {#each socialMedia as { name, icon, url }}
         <SocialIcon {name} {icon} {url} />
       {/each}

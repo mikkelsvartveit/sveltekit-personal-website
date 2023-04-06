@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fade, fly } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import "../app.css";
   import Link from "$lib/components/Link.svelte";
   import { page } from "$app/stores";
@@ -8,7 +8,7 @@
     currentRoute: string;
   };
 
-  const TRANSITION_DURATION = 400;
+  const TRANSITION_DURATION = 100;
 
   const navbarContent = [
     { name: "👨‍💻 Programming", href: "/programming" },
@@ -21,8 +21,7 @@
   <nav class="flex max-w-4xl mx-auto justify-between items-center px-6 py-5">
     <a
       href="/"
-      class="text-slate-600 text-lg hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
-      class:underline={"/" === $page.url.pathname}
+      class="font-medium text-lg text-slate-600 hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-slate-400"
     >
       Mikkel Svartveit
     </a>
@@ -44,12 +43,8 @@
 
 {#key data.currentRoute}
   <main
-    in:fly={{
-      y: 10,
-      duration: TRANSITION_DURATION * (3 / 4),
-      delay: TRANSITION_DURATION * (1 / 4),
-    }}
-    out:fade={{ duration: TRANSITION_DURATION * (1 / 4) }}
+    in:fade={{ duration: TRANSITION_DURATION, delay: TRANSITION_DURATION }}
+    out:fade={{ duration: TRANSITION_DURATION }}
   >
     <slot />
 

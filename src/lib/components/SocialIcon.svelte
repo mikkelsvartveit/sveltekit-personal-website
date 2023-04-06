@@ -5,5 +5,5 @@
 </script>
 
 <a href={url}>
-  <img src={icon} alt={name} class="inline-block w-8 h-8 mx-2" />
+  <img src={icon} alt={name} class="inline-block w-8 h-8" />
 </a>
