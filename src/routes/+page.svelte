@@ -38,9 +38,13 @@
   ];
 </script>
 
-<div class="max-w-4xl mx-auto px-6 py-12 flex">
-  <div class="w-1/2">
-    <h1 class="font-mono font-thin text-4xl text-gray-600 mb-8">
+<div
+  class="max-w-4xl mx-auto px-3 sm:px-6 py-12 flex flex-col-reverse md:flex-row"
+>
+  <div class="w-full md:w-1/2">
+    <h1
+      class="font-mono text-3xl sm:text-4xl text-gray-600 tracking-tight mb-8"
+    >
       Hi, I'm Mikkel 👋
     </h1>
 
@@ -70,9 +74,9 @@
     </div>
   </div>
 
-  <div class="w-1/2">
+  <div class="w-fyll md:w-1/2">
     <img
-      class="block w-5/6 ml-auto rounded-full border-4 border-white shadow-lg shadow-gray-400"
+      class="block w-full max-w-xs md:w-5/6 mb-12 mx-auto md:mx-0 md:ml-auto rounded-full border-4 border-white shadow-lg shadow-gray-400"
       src={portraitImage}
       alt="Portrait of Mikkel"
     />

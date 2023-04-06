@@ -2,45 +2,16 @@
   import { fade, fly } from "svelte/transition";
   import "../app.css";
   import Link from "$lib/components/Link.svelte";
-  import { page } from "$app/stores";
+  import Navbar from "$lib/components/Navbar.svelte";
 
   export let data: {
     currentRoute: string;
   };
 
   const TRANSITION_DURATION = 400;
-
-  const navbarContent = [
-    { name: "👨‍💻 Programming", href: "/programming" },
-    { name: "📷 Photography", href: "/photography" },
-    { name: "📝 Articles", href: "/articles" },
-  ];
 </script>
 
-<header class="shadow">
-  <nav class="flex max-w-4xl mx-auto justify-between items-center px-6 py-5">
-    <a
-      href="/"
-      class="text-slate-600 text-lg hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
-      class:underline={"/" === $page.url.pathname}
-    >
-      Mikkel Svartveit
-    </a>
-    <ul class="flex space-x-8">
-      {#each navbarContent as { name, href }}
-        <li>
-          <a
-            {href}
-            class="text-slate-600 text-lg hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
-            class:underline={href === $page.url.pathname}
-          >
-            {name}
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </nav>
-</header>
+<Navbar />
 
 {#key data.currentRoute}
   <main
