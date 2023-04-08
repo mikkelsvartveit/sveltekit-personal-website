@@ -18,19 +18,19 @@
   time I like to dabble with personal projects. Here are some of them.
 </Paragraph>
 
-<section class="max-w-xl mx-auto mt-8 grid grid-cols-2 sm:grid-cols-2 gap-8">
+<section class="mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
   {#each projects as { slug, title, description, image }}
     <a
       href="/programming/{slug}"
-      class="rounded-lg shadow-lg overflow-hidden pb-2"
+      class="max-w-md mx-auto rounded-lg shadow-lg overflow-hidden pb-6 hover:shadow-xl hover:-translate-y-1 duration-100"
     >
       <img src={image} alt={title} />
 
-      <h3 class="font-serif text-lg text-gray-600 text-center m-4">
+      <h3 class="text-xl text-gray-600 text-center mx-4 mt-6">
         {title}
       </h3>
 
-      <p class="text-slate-600 text-center m-4">{description}</p>
+      <p class="text-slate-600 text-center mx-4 mt-4">{description}</p>
     </a>
   {/each}
 </section>
