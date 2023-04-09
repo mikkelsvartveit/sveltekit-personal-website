@@ -83,7 +83,7 @@
 </div>
 
 <footer class="flex justify-center my-4">
-  <p class="text-xs text-slate-400">
+  <p class="text-xs text-slate-400 mt-8">
     Made in a breeze thanks to
     <Link href="https://kit.svelte.dev/" target="_blank">SvelteKit</Link>
     and

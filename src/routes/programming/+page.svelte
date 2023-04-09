@@ -10,7 +10,7 @@
 <h1
   class="font-serif font-light text-3xl sm:text-4xl text-gray-600 tracking-wide mb-8 text-center"
 >
-  Projects
+  Programming projects
 </h1>
 
 <Paragraph>
@@ -22,15 +22,15 @@
   {#each projects as { slug, title, description, image }}
     <a
       href="/programming/{slug}"
-      class="max-w-md mx-auto rounded-lg shadow-lg overflow-hidden pb-6 hover:shadow-xl hover:-translate-y-1 duration-100"
+      class="max-w-md mx-auto rounded-lg shadow-lg overflow-hidden pb-8 hover:shadow-xl hover:-translate-y-1 duration-100"
     >
       <img src={image} alt={title} />
 
-      <h3 class="text-xl text-gray-600 text-center mx-4 mt-6">
+      <h3 class="text-2xl text-slate-700 text-center mx-4 mt-6">
         {title}
       </h3>
 
-      <p class="text-slate-600 text-center mx-4 mt-4">{description}</p>
+      <p class="text-slate-600 text-lg text-center mx-4 mt-4">{description}</p>
     </a>
   {/each}
 </section>
