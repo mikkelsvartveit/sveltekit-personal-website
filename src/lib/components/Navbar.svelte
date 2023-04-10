@@ -17,6 +17,7 @@
   >
     <a
       href="/"
+      data-sveltekit-preload-code="eager"
       class="text-slate-600 text-lg hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
       class:underline={"/" === $page.url.pathname}
     >
@@ -28,6 +29,7 @@
         <li>
           <a
             {href}
+            data-sveltekit-preload-code="eager"
             class="text-slate-600 text-lg hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
             class:underline={href === $page.url.pathname}
           >
