@@ -40,7 +40,7 @@
 </script>
 
 <div
-  class="max-w-4xl mx-auto px-3 sm:px-6 py-12 flex flex-col-reverse md:flex-row"
+  class="max-w-4xl mx-auto px-3 sm:px-6 pt-12 pb-8 flex flex-col-reverse md:flex-row"
 >
   <section class="w-full md:w-1/2">
     <h1
@@ -56,16 +56,14 @@
 
     <Paragraph>
       Here you will find some
-      <Link href="/programming">programming projects</Link>, a small
+      <Link href="/programming">programming projects</Link>, and a small
       <Link href="/photography">collection of photos</Link>
-      I'm proud of, as well as a few
-      <Link href="/articles">articles</Link>
-      about stuff that interests me.
+      I'm proud of.
     </Paragraph>
 
     <Paragraph>
       Want to get in touch?
-      <Link href="mailto:hi@mikkelsvartveit.com">Contact me.</Link>
+      <Link href="mailto:mail@mikkelsvartveit.com">Contact me.</Link>
     </Paragraph>
 
     <div class="mt-8 space-x-3">
@@ -85,7 +83,7 @@
 </div>
 
 <footer class="flex justify-center my-4">
-  <p class="text-xs text-slate-400 mt-8">
+  <p class="text-xs text-slate-400">
     Made in a breeze thanks to
     <Link href="https://kit.svelte.dev/" target="_blank">SvelteKit</Link>
     and

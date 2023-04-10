@@ -5,7 +5,7 @@
   const navbarContent = [
     { name: "👨‍💻 Programming", href: "/programming" },
     { name: "📷 Photography", href: "/photography" },
-    { name: "📝 Articles", href: "/articles" },
+    // { name: "📝 Articles", href: "/articles" },
   ];
 
   let collapsed = true;

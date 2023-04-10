@@ -14,8 +14,8 @@
 </h1>
 
 <Paragraph>
-  I'm quite into programming, and web development in particular. When I have
-  time I like to dabble with personal projects. Here are some of them.
+  I'm quite into programming and web development. When I have time on my hands I
+  like to dabble with personal projects. Here are some of them.
 </Paragraph>
 
 <section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
