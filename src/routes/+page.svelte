@@ -39,7 +39,9 @@
   ];
 </script>
 
-<div class="flex flex-col-reverse md:flex-row">
+<div
+  class="max-w-4xl mx-auto px-3 sm:px-6 py-12 flex flex-col-reverse md:flex-row"
+>
   <section class="w-full md:w-1/2">
     <h1
       class="font-serif font-light text-3xl sm:text-4xl text-gray-600 tracking-wide mb-8"

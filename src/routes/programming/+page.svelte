@@ -18,7 +18,7 @@
   time I like to dabble with personal projects. Here are some of them.
 </Paragraph>
 
-<section class="mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
   {#each projects as { slug, title, description, image }}
     <a
       href="/programming/{slug}"

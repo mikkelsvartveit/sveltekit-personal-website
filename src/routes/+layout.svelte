@@ -14,7 +14,6 @@
 
 {#key data.currentRoute}
   <main
-    class="max-w-4xl mx-auto px-3 sm:px-6 py-12"
     in:fly={{
       y: 10,
       duration: TRANSITION_DURATION * (3 / 4),
