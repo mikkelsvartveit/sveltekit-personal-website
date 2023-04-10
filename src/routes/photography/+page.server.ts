@@ -1,18 +1,27 @@
 import fs from "fs";
 import type { Load } from "@sveltejs/kit";
 
-export const load: Load = async (): Promise<{ photos: string[] }> => {
-  const photos = (
-    await fs.promises.readdir("static/photos-optimized/", {
-      withFileTypes: true,
-    })
-  )
-    .filter((photo: fs.Dirent) => photo.isFile())
-    .map((photo: fs.Dirent) => photo.name)
+export const load: Load = async (): Promise<{
+  photos: { src: string; width: number; height: number }[];
+}> => {
+  const photos = (await fs.promises.readdir("static/photos-optimized/"))
+    .filter((item: string) => !/(^|\/)\.[^/.]/g.test(item)) // Remove hidden files
     .sort((a: string, b: string) => {
       const aNumber = parseInt(a.split(".")[0]);
       const bNumber = parseInt(b.split(".")[0]);
       return bNumber - aNumber;
+    })
+    .map((src: string) => {
+      // Read JSON file
+      const { width, height } = JSON.parse(
+        fs.readFileSync(`static/photos-optimized/${src}/metadata.json`, "utf8")
+      ) as { width: number; height: number };
+
+      return {
+        src,
+        width,
+        height,
+      };
     });
 
   return { photos };

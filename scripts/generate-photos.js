@@ -11,36 +11,49 @@ if (fs.existsSync(OUTPUT_DIR)) {
 
 // Create output directory
 fs.mkdirSync(`${OUTPUT_DIR}`);
-fs.mkdirSync(`${OUTPUT_DIR}/thumbs`);
 
 const photos = fs.readdirSync(INPUT_DIR);
 console.log("\nResizing photos...\n");
 
 photos.forEach((photo) => {
   const inputPath = `${INPUT_DIR}/${photo}`;
+  const outputPath = `${OUTPUT_DIR}/${photo}`;
+
+  // Create output directory for each photo
+  fs.mkdirSync(outputPath);
+
+  // Save metadata
+  sharp(inputPath)
+    .metadata()
+    .then((metadata) => {
+      const { width, height } = metadata;
+      fs.writeFileSync(
+        `${outputPath}/metadata.json`,
+        JSON.stringify({ width, height })
+      );
+    });
 
   // Generate low-res thumbnail
-  const thumbnailOutputPath = `${OUTPUT_DIR}/thumbs/${photo}`;
   sharp(inputPath)
     .resize({ width: 800 })
     .jpeg({
       quality: 70,
       mozjpeg: true,
+      progressive: true,
     })
-    .toFile(thumbnailOutputPath)
+    .toFile(`${outputPath}/thumbnail.jpg`)
     .then(() => {
-      console.log(`Created ${thumbnailOutputPath}`);
+      console.log(`Created thumbnail for ${photo}`);
     });
 
   // Generate high quality image for full-screen viewing
-  const outputPath = `${OUTPUT_DIR}/${photo}`;
   sharp(inputPath)
     .resize({ height: 2000 })
     .jpeg({
       mozjpeg: true,
     })
-    .toFile(outputPath)
+    .toFile(`${outputPath}/full.jpg`)
     .then(() => {
-      console.log(`Created ${outputPath}`);
+      console.log(`Created high-res image for ${photo}`);
     });
 });

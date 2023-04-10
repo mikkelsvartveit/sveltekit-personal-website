@@ -1,5 +1,7 @@
 <script lang="ts">
-  export let data: { photos: string[] };
+  import Paragraph from "$lib/components/Paragraph.svelte";
+
+  export let data: { photos: { src: string; width: number; height: number }[] };
   const { photos } = data;
 </script>
 
@@ -10,15 +12,27 @@
     Photography
   </h1>
 
+  <Paragraph class="max-w-4xl mx-auto px-3 sm:px-6">
+    I enjoy taking photos and I always bring my camera with me when I travel. I
+    used to shoot on a Nikon DSLR, but recently switched to a Fujifilm X-T20,
+    which is a lot more enjoyable to bring around. These are some of my favorite
+    shots from over the years.
+  </Paragraph>
+
   <section class="columns-2 md:columns-3 lg:columns-4 gap-4 mt-12">
     {#each photos as photo}
-      <div class="flex pb-4">
+      <a
+        href="/photos-optimized/{photo.src}/full.jpg"
+        class="w-full flex pb-4 hover:-translate-y-1 duration-75"
+      >
         <img
-          src="/photos-optimized/thumbs/{photo}"
+          src="/photos-optimized/{photo.src}/thumbnail.jpg"
           alt="Photograph by Mikkel Svartveit"
-          class="w-full rounded"
+          class="w-full rounded text-transparent bg-slate-100"
+          width={photo.width}
+          height={photo.height}
         />
-      </div>
+      </a>
     {/each}
   </section>
 </div>
