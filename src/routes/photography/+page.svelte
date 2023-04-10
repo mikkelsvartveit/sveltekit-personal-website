@@ -14,16 +14,16 @@
 
   <Paragraph class="max-w-4xl mx-auto px-3 sm:px-6">
     I enjoy taking photos and I always bring my camera with me when I travel. I
-    used to shoot on a Nikon DSLR, but recently switched to a Fujifilm X-T20,
-    which is a lot more enjoyable to bring around. These are some of my favorite
-    shots from over the years.
+    used to shoot with a Nikon DSLR, but recently switched to a Fujifilm X-T20,
+    which I find a lot more enjoyable to bring around. These are some of my
+    favorite shots from over the years.
   </Paragraph>
 
   <section class="columns-2 md:columns-3 lg:columns-4 gap-4 mt-12">
     {#each photos as photo}
       <a
         href="/photos-optimized/{photo.src}/full.jpg"
-        class="w-full flex pb-4 hover:-translate-y-1 duration-75"
+        class="w-full flex py-2 hover:-translate-y-1 duration-100"
       >
         <img
           src="/photos-optimized/{photo.src}/thumbnail.jpg"
