@@ -24,7 +24,7 @@
       href="/programming/{slug}"
       class="max-w-md mx-auto rounded-lg shadow-lg overflow-hidden pb-8 hover:shadow-xl hover:-translate-y-1 duration-100"
     >
-      <img src={image} alt={title} />
+      <img src={image} alt={title} width={1000} height={500} />
 
       <h3 class="text-2xl text-slate-700 text-center mx-4 mt-6">
         {title}

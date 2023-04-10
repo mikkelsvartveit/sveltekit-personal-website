@@ -3,37 +3,30 @@
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SocialIcon from "$lib/components/SocialIcon.svelte";
 
-  import portraitImage from "$lib/images/portrait.jpg";
-  import facebookIcon from "$lib/icons/facebook-icon.png";
-  import twitterIcon from "$lib/icons/twitter-icon.png";
-  import instagramIcon from "$lib/icons/instagram-icon.png";
-  import vscoIcon from "$lib/icons/vsco-icon.png";
-  import githubIcon from "$lib/icons/github-icon.png";
-
   const socialMedia = [
     {
       name: "Facebook",
-      icon: facebookIcon,
+      icon: "/icons/facebook-icon.png",
       url: "https://facebook.com/profile.php?id=100006609016880",
     },
     {
       name: "Twitter",
-      icon: twitterIcon,
+      icon: "/icons/twitter-icon.png",
       url: "https://twitter.com/mikkelsvartveit",
     },
     {
       name: "Instagram",
-      icon: instagramIcon,
+      icon: "/icons/instagram-icon.png",
       url: "https://instagram.com/mikkelsvartveit",
     },
     {
       name: "VSCO",
-      icon: vscoIcon,
+      icon: "/icons/vsco-icon.png",
       url: "https://vsco.co/mikkelsvartveit",
     },
     {
       name: "GitHub",
-      icon: githubIcon,
+      icon: "/icons/github-icon.png",
       url: "https://github.com/mikkelsvartveit",
     },
   ];
@@ -75,9 +68,11 @@
 
   <figure class="w-fyll md:w-1/2">
     <img
-      class="block w-full max-w-xs md:w-5/6 mb-12 mx-auto md:mx-0 md:ml-auto rounded-full border-4 border-white shadow-lg shadow-gray-400"
-      src={portraitImage}
+      class="block w-full max-w-xs md:w-5/6 mb-12 mx-auto md:mx-0 md:ml-auto rounded-full border-4 border-white shadow-lg shadow-gray-400 bg-gray-100 text-transparent"
+      src="/images/portrait.jpg"
       alt="Portrait of Mikkel"
+      width={900}
+      height={900}
     />
   </figure>
 </div>
