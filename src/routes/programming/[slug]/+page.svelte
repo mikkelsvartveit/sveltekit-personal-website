@@ -40,7 +40,7 @@
   </div>
 
   <div
-    class="prose prose-lg max-w-none prose-gray prose-headings:text-gray-600 prose-h2:font-light prose-a:text-teal-600 prose-a:no-underline prose-a:duration-100 hover:prose-a:text-teal-500 hover:prose-a:underline font-serif"
+    class="prose prose-lg max-w-none font-serif prose-headings:text-gray-600 prose-h2:font-light prose-a:text-teal-600 prose-a:no-underline prose-a:duration-100 hover:prose-a:text-teal-500 hover:prose-a:underline before:prose-code:content-[''] after:prose-code:content-['']"
   >
     <Content />
   </div>
