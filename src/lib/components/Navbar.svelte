@@ -18,7 +18,7 @@
     <a
       href="/"
       data-sveltekit-preload-code="eager"
-      class="text-slate-600 text-lg hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
+      class="text-gray-600 text-lg hover:text-gray-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
       class:underline={"/" === $page.url.pathname}
     >
       Mikkel Svartveit
@@ -30,7 +30,7 @@
           <a
             {href}
             data-sveltekit-preload-code="eager"
-            class="text-slate-600 text-lg hover:text-slate-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
+            class="text-gray-600 text-lg hover:text-gray-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
             class:underline={href === $page.url.pathname}
           >
             {name}
@@ -89,7 +89,7 @@
         <a
           {href}
           on:click={() => (collapsed = true)}
-          class="text-slate-600 text-lg tracking-wide underline-offset-8 decoration-2 decoration-yellow-400 whitespace-nowrap"
+          class="text-gray-600 text-lg tracking-wide underline-offset-8 decoration-2 decoration-yellow-400 whitespace-nowrap"
           class:underline={href === $page.url.pathname}
         >
           {name}

@@ -10,7 +10,7 @@
     {title}
   </h1>
 
-  <p class="text-slate-500 font-sans text-sm text-center mx-auto mb-8">
+  <p class="text-gray-500 text-sm text-center mx-auto mb-8">
     {new Date(date).toLocaleDateString("en-US", {
       month: "long",
       year: "numeric",
@@ -22,7 +22,7 @@
       <a
         href={website}
         target="_blank"
-        class="font-bold text-slate-600 tracking-wide block border border-slate-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-slate-50 duration-100"
+        class="font-bold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
       >
         🖥️ Visit website
       </a>
@@ -32,7 +32,7 @@
       <a
         href={repository}
         target="_blank"
-        class="font-bold text-slate-600 tracking-wide block border border-slate-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-slate-50 duration-100"
+        class="font-bold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
       >
         📦 Code on GitHub
       </a>
@@ -40,7 +40,7 @@
   </div>
 
   <div
-    class="prose prose-lg max-w-none prose-slate prose-headings:text-slate-600 prose-h2:font-light prose-a:text-teal-600 prose-a:no-underline prose-a:duration-100 hover:prose-a:text-teal-500 hover:prose-a:underline font-serif"
+    class="prose prose-lg max-w-none prose-gray prose-headings:text-gray-600 prose-h2:font-light prose-a:text-teal-600 prose-a:no-underline prose-a:duration-100 hover:prose-a:text-teal-500 hover:prose-a:underline font-serif"
   >
     <Content />
   </div>

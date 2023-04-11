@@ -30,7 +30,7 @@
         <img
           src="/photos-optimized/{photo.src}/thumbnail.jpg"
           alt="Photograph by Mikkel Svartveit"
-          class="w-full rounded text-transparent bg-slate-100"
+          class="w-full rounded text-transparent bg-gray-100"
           width={photo.width}
           height={photo.height}
         />
