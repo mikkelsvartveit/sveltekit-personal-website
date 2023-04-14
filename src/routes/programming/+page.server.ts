@@ -1,8 +1,6 @@
 import type { IProject } from "$lib/types/projects";
 import type { Load } from "@sveltejs/kit";
 
-export const prerender = true;
-
 export const load: Load = async (): Promise<{ projects: IProject[] }> => {
   const projectFiles = Object.entries(
     import.meta.glob(`../../content/dev-projects/*.md`)

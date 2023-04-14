@@ -11,7 +11,7 @@
   let collapsed = true;
 </script>
 
-<header class="shadow">
+<header class="shadow bg-white">
   <nav
     class="flex flex-wrap max-w-4xl h-16 mx-auto justify-between items-center px-6"
   >

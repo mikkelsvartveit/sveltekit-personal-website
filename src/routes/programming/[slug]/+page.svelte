@@ -22,7 +22,7 @@
       <a
         href={website}
         target="_blank"
-        class="font-semibold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
+        class="bg-white font-semibold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
       >
         🖥️ Visit website
       </a>
@@ -32,7 +32,7 @@
       <a
         href={repository}
         target="_blank"
-        class="font-semibold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
+        class="bg-white font-semibold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
       >
         📦 Code on GitHub
       </a>
