@@ -39,7 +39,11 @@
       {/each}
     </ul>
 
-    <button class="md:hidden" on:click={() => (collapsed = !collapsed)}>
+    <button
+      aria-label="Open menu"
+      class="md:hidden"
+      on:click={() => (collapsed = !collapsed)}
+    >
       <svg
         class="w-10 h-10 stroke-yellow-500"
         viewBox="0 0 24 24"
@@ -69,7 +73,11 @@
     transition:slide={{ duration: 300, axis: "x" }}
     class="block bg-white fixed top-0 right-0 h-full p-4 z-10"
   >
-    <button on:click={() => (collapsed = true)} class="block w-10 h-10 ml-auto">
+    <button
+      aria-label="Close menu"
+      on:click={() => (collapsed = true)}
+      class="block w-10 h-10 ml-auto"
+    >
       <svg
         class="stroke-gray-400"
         viewBox="0 0 24 24"
