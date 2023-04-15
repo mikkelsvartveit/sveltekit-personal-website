@@ -3,6 +3,10 @@
   const { title, date, website, repository, Content } = data;
 </script>
 
+<svelte:head>
+  <title>{title} – Mikkel Svartveit</title>
+</svelte:head>
+
 <article class="max-w-2xl mx-auto">
   <h1
     class="font-serif font-light text-4xl text-gray-600 text-center tracking-wide mb-4 underline decoration-2 underline-offset-8 decoration-yellow-400"

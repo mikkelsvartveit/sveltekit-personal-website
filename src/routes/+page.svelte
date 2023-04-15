@@ -32,6 +32,10 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Mikkel Svartveit</title>
+</svelte:head>
+
 <div
   class="max-w-4xl mx-auto px-3 sm:px-6 pt-12 pb-8 flex flex-col-reverse md:flex-row"
 >

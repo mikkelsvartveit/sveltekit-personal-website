@@ -5,6 +5,10 @@
   const { photos } = data;
 </script>
 
+<svelte:head>
+  <title>Photography – Mikkel Svartveit</title>
+</svelte:head>
+
 <div class="max-w-4xl mx-auto px-3 sm:px-6 pt-12">
   <h1
     class="font-serif font-light text-3xl sm:text-4xl text-gray-600 tracking-wide mb-8 text-center"
