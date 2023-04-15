@@ -9,9 +9,9 @@
   <title>Photography – Mikkel Svartveit</title>
 </svelte:head>
 
-<div class="max-w-4xl mx-auto px-3 sm:px-6 pt-12">
+<div class="mx-auto max-w-4xl px-3 pt-12 sm:px-6">
   <h1
-    class="font-serif font-light text-3xl sm:text-4xl text-gray-600 tracking-wide mb-8 text-center"
+    class="mb-8 text-center font-serif text-3xl font-light tracking-wide text-gray-600 sm:text-4xl"
   >
     Photography
   </h1>
@@ -25,16 +25,16 @@
 </div>
 
 <div class="mx-auto px-4">
-  <section class="columns-2 md:columns-3 lg:columns-4 gap-4 mt-12 mb-2">
+  <section class="mb-2 mt-12 columns-2 gap-4 md:columns-3 lg:columns-4">
     {#each photos as photo}
       <a
         href="/photos-optimized/{photo.src}/full.jpg"
-        class="w-full flex py-2 hover:-translate-y-1 duration-100"
+        class="flex w-full py-2 duration-100 hover:-translate-y-1"
       >
         <img
           src="/photos-optimized/{photo.src}/thumbnail.jpg"
           alt="Photograph by Mikkel Svartveit"
-          class="w-full rounded text-transparent bg-gray-100"
+          class="w-full rounded bg-gray-100 text-transparent"
           width={photo.width}
           height={photo.height}
         />

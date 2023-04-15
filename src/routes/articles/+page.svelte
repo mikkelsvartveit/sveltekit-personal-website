@@ -3,7 +3,7 @@
 </svelte:head>
 
 <h1
-  class="font-serif font-light text-3xl sm:text-4xl text-gray-600 tracking-wide mb-8 text-center"
+  class="mb-8 text-center font-serif text-3xl font-light tracking-wide text-gray-600 sm:text-4xl"
 >
   Latest articles
 </h1>

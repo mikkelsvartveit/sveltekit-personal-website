@@ -1,3 +1,3 @@
-<div class="max-w-4xl mx-auto px-3 sm:px-6 py-12">
+<div class="mx-auto max-w-4xl px-3 py-12 sm:px-6">
   <slot />
 </div>

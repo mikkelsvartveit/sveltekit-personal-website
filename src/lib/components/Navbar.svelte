@@ -11,26 +11,26 @@
   let collapsed = true;
 </script>
 
-<header class="shadow bg-white">
+<header class="bg-white shadow">
   <nav
-    class="flex flex-wrap max-w-4xl h-16 mx-auto justify-between items-center px-6"
+    class="mx-auto flex h-16 max-w-4xl flex-wrap items-center justify-between px-6"
   >
     <a
       href="/"
       data-sveltekit-preload-code="eager"
-      class="text-gray-600 text-lg hover:text-gray-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
+      class="text-lg tracking-wide text-gray-600 decoration-yellow-400 decoration-2 underline-offset-8 duration-100 hover:text-gray-400"
       class:underline={"/" === $page.url.pathname}
     >
       Mikkel Svartveit
     </a>
 
-    <ul class="hidden md:flex space-x-8">
+    <ul class="hidden space-x-8 md:flex">
       {#each navbarContent as { name, href }}
         <li>
           <a
             {href}
             data-sveltekit-preload-code="eager"
-            class="text-gray-600 text-lg hover:text-gray-400 duration-100 tracking-wide underline-offset-8 decoration-2 decoration-yellow-400"
+            class="text-lg tracking-wide text-gray-600 decoration-yellow-400 decoration-2 underline-offset-8 duration-100 hover:text-gray-400"
             class:underline={href === $page.url.pathname}
           >
             {name}
@@ -45,7 +45,7 @@
       on:click={() => (collapsed = !collapsed)}
     >
       <svg
-        class="w-10 h-10 stroke-yellow-500"
+        class="h-10 w-10 stroke-yellow-500"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -67,16 +67,16 @@
 {#if !collapsed}
   <div
     transition:fade={{ duration: 100 }}
-    class="w-full h-full top-0 left-0 fixed bg-black opacity-50"
+    class="fixed left-0 top-0 h-full w-full bg-black opacity-50"
   />
   <ul
     transition:slide={{ duration: 300, axis: "x" }}
-    class="block bg-white fixed top-0 right-0 h-full p-4 z-10"
+    class="fixed right-0 top-0 z-10 block h-full bg-white p-4"
   >
     <button
       aria-label="Close menu"
       on:click={() => (collapsed = true)}
-      class="block w-10 h-10 ml-auto"
+      class="ml-auto block h-10 w-10"
     >
       <svg
         class="stroke-gray-400"
@@ -93,11 +93,11 @@
     </button>
 
     {#each navbarContent as { name, href }}
-      <li class="ml-2 mr-16 my-6">
+      <li class="my-6 ml-2 mr-16">
         <a
           {href}
           on:click={() => (collapsed = true)}
-          class="text-gray-600 text-lg tracking-wide underline-offset-8 decoration-2 decoration-yellow-400 whitespace-nowrap"
+          class="whitespace-nowrap text-lg tracking-wide text-gray-600 decoration-yellow-400 decoration-2 underline-offset-8"
           class:underline={href === $page.url.pathname}
         >
           {name}

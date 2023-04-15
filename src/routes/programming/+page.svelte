@@ -12,7 +12,7 @@
 </svelte:head>
 
 <h1
-  class="font-serif font-light text-3xl sm:text-4xl text-gray-600 tracking-wide mb-8 text-center"
+  class="mb-8 text-center font-serif text-3xl font-light tracking-wide text-gray-600 sm:text-4xl"
 >
   Programming projects
 </h1>
@@ -22,19 +22,19 @@
   like to dabble with personal projects. Here are some of them.
 </Paragraph>
 
-<section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<section class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
   {#each projects as { slug, title, description, image }}
     <a
       href="/programming/{slug}"
-      class="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden pb-8 hover:shadow-xl hover:-translate-y-1 duration-100"
+      class="mx-auto max-w-md overflow-hidden rounded-lg bg-white pb-8 shadow-lg duration-100 hover:-translate-y-1 hover:shadow-xl"
     >
       <img src={image} alt={title} width={1000} height={500} />
 
-      <h2 class="text-2xl text-gray-700 text-center mx-4 mt-6">
+      <h2 class="mx-4 mt-6 text-center text-2xl text-gray-700">
         {title}
       </h2>
 
-      <p class="text-gray-600 text-lg text-center mx-4 mt-4">{description}</p>
+      <p class="mx-4 mt-4 text-center text-lg text-gray-600">{description}</p>
     </a>
   {/each}
 </section>

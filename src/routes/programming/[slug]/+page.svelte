@@ -7,26 +7,26 @@
   <title>{title} – Mikkel Svartveit</title>
 </svelte:head>
 
-<article class="max-w-2xl mx-auto">
+<article class="mx-auto max-w-2xl">
   <h1
-    class="font-serif font-light text-4xl text-gray-600 text-center tracking-wide mb-4 underline decoration-2 underline-offset-8 decoration-yellow-400"
+    class="mb-4 text-center font-serif text-4xl font-light tracking-wide text-gray-600 underline decoration-yellow-400 decoration-2 underline-offset-8"
   >
     {title}
   </h1>
 
-  <p class="text-gray-500 text-sm text-center mx-auto mb-8">
+  <p class="mx-auto mb-8 text-center text-sm text-gray-500">
     {new Date(date).toLocaleDateString("en-US", {
       month: "long",
       year: "numeric",
     })}
   </p>
 
-  <div class="flex justify-center items-center mb-6 flex-col sm:flex-row">
+  <div class="mb-6 flex flex-col items-center justify-center sm:flex-row">
     {#if website}
       <a
         href={website}
         target="_blank"
-        class="bg-white font-semibold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
+        class="mx-2 mb-2 block rounded-lg border border-gray-200 bg-white px-4 py-3 font-semibold tracking-wide text-gray-600 shadow duration-100 hover:bg-gray-50"
       >
         🖥️ Visit website
       </a>
@@ -36,7 +36,7 @@
       <a
         href={repository}
         target="_blank"
-        class="bg-white font-semibold text-gray-600 tracking-wide block border border-gray-200 rounded-lg shadow mx-2 mb-2 px-4 py-3 hover:bg-gray-50 duration-100"
+        class="mx-2 mb-2 block rounded-lg border border-gray-200 bg-white px-4 py-3 font-semibold tracking-wide text-gray-600 shadow duration-100 hover:bg-gray-50"
       >
         📦 Code on GitHub
       </a>
@@ -44,7 +44,7 @@
   </div>
 
   <div
-    class="prose prose-lg max-w-none font-serif prose-headings:text-gray-600 prose-h2:font-light prose-a:text-teal-700 prose-a:no-underline prose-a:duration-100 hover:prose-a:text-teal-500 hover:prose-a:underline before:prose-code:content-[''] after:prose-code:content-['']"
+    class="prose prose-lg max-w-none font-serif prose-headings:text-gray-600 prose-h2:font-light prose-a:text-teal-600 prose-a:no-underline prose-a:duration-100 hover:prose-a:text-teal-500 hover:prose-a:underline before:prose-code:content-[''] after:prose-code:content-['']"
   >
     <Content />
   </div>

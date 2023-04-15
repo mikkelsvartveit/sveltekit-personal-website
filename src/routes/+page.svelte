@@ -37,11 +37,11 @@
 </svelte:head>
 
 <div
-  class="max-w-4xl mx-auto px-3 sm:px-6 pt-12 pb-8 flex flex-col-reverse md:flex-row"
+  class="mx-auto flex max-w-4xl flex-col-reverse px-3 pb-8 pt-12 sm:px-6 md:flex-row"
 >
   <section class="w-full md:w-1/2">
     <h1
-      class="font-serif font-light text-3xl sm:text-4xl text-gray-600 tracking-wide mb-8"
+      class="mb-8 font-serif text-3xl font-light tracking-wide text-gray-600 sm:text-4xl"
     >
       Hi, I'm Mikkel 👋
     </h1>
@@ -72,7 +72,7 @@
 
   <figure class="w-fyll md:w-1/2">
     <img
-      class="block w-full max-w-xs md:w-5/6 mb-12 mx-auto md:mx-0 md:ml-auto rounded-full border-4 border-white shadow-lg shadow-gray-400 bg-gray-100 text-transparent"
+      class="mx-auto mb-12 block w-full max-w-xs rounded-full border-4 border-white bg-gray-100 text-transparent shadow-lg shadow-gray-400 md:mx-0 md:ml-auto md:w-5/6"
       src="/images/portrait.jpg"
       alt="Portrait of Mikkel"
       width={900}
@@ -81,7 +81,7 @@
   </figure>
 </div>
 
-<footer class="flex justify-center my-4">
+<footer class="my-4 flex justify-center">
   <p class="text-xs text-gray-400">
     Made in a breeze thanks to
     <Link href="https://kit.svelte.dev/" target="_blank">SvelteKit</Link>
