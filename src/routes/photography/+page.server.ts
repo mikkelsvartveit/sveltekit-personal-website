@@ -1,9 +1,7 @@
 import fs from "fs";
-import type { Load } from "@sveltejs/kit";
+import type { ServerLoad } from "@sveltejs/kit";
 
-export const load: Load = async (): Promise<{
-  photos: { src: string; width: number; height: number }[];
-}> => {
+export const load = (async () => {
   const photos = (await fs.promises.readdir("static/photos-optimized/"))
     .filter((item: string) => !/(^|\/)\.[^/.]/g.test(item)) // Remove hidden files
     .sort((a: string, b: string) => {
@@ -25,4 +23,4 @@ export const load: Load = async (): Promise<{
     });
 
   return { photos };
-};
+}) satisfies ServerLoad;

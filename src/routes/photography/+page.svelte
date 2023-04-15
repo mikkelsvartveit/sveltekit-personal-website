@@ -1,7 +1,8 @@
 <script lang="ts">
   import Paragraph from "$lib/components/Paragraph.svelte";
+  import type { PageServerData } from "./$types";
 
-  export let data: { photos: { src: string; width: number; height: number }[] };
+  export let data: PageServerData;
   const { photos } = data;
 </script>
 

@@ -1,8 +1,7 @@
 import { error } from "@sveltejs/kit";
-import type { Load } from "@sveltejs/kit";
-import type { IProject } from "$lib/types/projects";
+import type { PageLoad } from "./$types";
 
-export const load: Load = async ({ params }): Promise<IProject> => {
+export const load = (async ({ params }) => {
   try {
     const project = await import(
       `../../../content/dev-projects/${params.slug}.md`
@@ -25,4 +24,4 @@ export const load: Load = async ({ params }): Promise<IProject> => {
   } catch (e) {
     throw error(404, "Project not found");
   }
-};
+}) satisfies PageLoad;

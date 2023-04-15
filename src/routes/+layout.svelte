@@ -2,11 +2,9 @@
   import { fade, fly } from "svelte/transition";
   import "../app.css";
   import Navbar from "$lib/components/Navbar.svelte";
+  import type { LayoutData } from "./$types";
 
-  export let data: {
-    currentRoute: string;
-  };
-
+  export let data: LayoutData;
   const TRANSITION_DURATION = 400;
 </script>
 

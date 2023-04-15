@@ -1,8 +1,8 @@
 <script lang="ts">
   import Paragraph from "$lib/components/Paragraph.svelte";
-  import type { IProject } from "$lib/types/projects";
+  import type { PageData } from "./$types";
 
-  export let data: { projects: IProject[] };
+  export let data: PageData;
 
   const { projects } = data;
 </script>

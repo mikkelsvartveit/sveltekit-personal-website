@@ -1,7 +1,7 @@
 import type { IProject } from "$lib/types/projects";
-import type { Load } from "@sveltejs/kit";
+import type { ServerLoad } from "@sveltejs/kit";
 
-export const load: Load = async (): Promise<{ projects: IProject[] }> => {
+export const load = (async () => {
   const projectFiles = Object.entries(
     import.meta.glob(`../../content/dev-projects/*.md`)
   );
@@ -37,4 +37,4 @@ export const load: Load = async (): Promise<{ projects: IProject[] }> => {
   ).sort((a, b) => ((a.date ?? 0) > (b.date ?? 0) ? -1 : 1));
 
   return { projects };
-};
+}) satisfies ServerLoad;
