@@ -2,6 +2,9 @@
   import { slide, fade } from "svelte/transition";
   import { page } from "$app/stores";
 
+  let scrollPosition = 0;
+  $: isScrolled = scrollPosition > 0;
+
   const navbarContent = [
     { name: "👨‍💻 Programming", href: "/programming" },
     { name: "📷 Photography", href: "/photography" },
@@ -11,7 +14,12 @@
   let collapsed = true;
 </script>
 
-<header class="bg-white shadow">
+<svelte:window bind:scrollY={scrollPosition} />
+
+<header
+  class="sticky top-0 z-10 bg-gray-50 transition-shadow ease-in"
+  class:shadow={isScrolled}
+>
   <nav
     class="mx-auto flex h-16 max-w-4xl flex-wrap items-center justify-between px-6"
   >
