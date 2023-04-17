@@ -5,7 +5,7 @@ description: Search engine for Rick and Morty characters and episodes.
 image: ./images/rickandmorty.jpg
 technologies: TypeScript,React,GraphQL,Express,MongoDB
 website: https://rickmorty.misva.no
-repository: https://github.com/mikkelsvartveit/rm-explorer
+repository: https://github.com/mikkelsvartveit/it2810-project3
 date: 2022-10-01
 ---
 
