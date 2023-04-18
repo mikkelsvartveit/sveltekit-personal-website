@@ -75,11 +75,11 @@
 {#if !collapsed}
   <div
     transition:fade={{ duration: 100 }}
-    class="fixed left-0 top-0 h-full w-full bg-black opacity-50"
+    class="fixed left-0 top-0 z-20 h-full w-full bg-black opacity-50"
   />
   <ul
     transition:slide={{ duration: 300, axis: "x" }}
-    class="fixed right-0 top-0 z-10 block h-full bg-white p-4"
+    class="fixed right-0 top-0 z-30 block h-full bg-white p-4"
   >
     <button
       aria-label="Close menu"

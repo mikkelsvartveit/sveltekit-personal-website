@@ -81,7 +81,7 @@
   </figure>
 </div>
 
-<footer class="my-4 flex justify-center">
+<footer class="mb-12 mt-4 flex justify-center">
   <p class="text-xs text-gray-400">
     Made in a breeze thanks to
     <Link href="https://kit.svelte.dev/" target="_blank">SvelteKit</Link>
