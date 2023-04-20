@@ -42,7 +42,7 @@
 </svelte:head>
 
 <div
-  class="mx-auto flex max-w-4xl flex-col-reverse px-3 pb-8 pt-12 sm:px-6 md:flex-row"
+  class="mx-auto flex max-w-5xl flex-col-reverse px-3 pb-8 pt-12 sm:px-6 md:flex-row"
 >
   <section class="w-full md:w-1/2">
     <h1
@@ -75,9 +75,9 @@
     </div>
   </section>
 
-  <figure class="w-fyll md:w-1/2">
+  <figure class="px-4 md:w-1/2">
     <img
-      class="mx-auto mb-12 block w-full max-w-xs rounded-full border-4 border-white bg-gray-100 text-transparent shadow-lg shadow-gray-400 md:mx-0 md:ml-auto md:w-5/6"
+      class="mx-auto mb-12 block w-full max-w-sm rounded-full border-4 border-white bg-gray-100 text-transparent shadow-lg shadow-gray-400 md:mx-0 md:ml-auto md:w-5/6"
       src="/images/portrait.jpg"
       alt="Portrait of Mikkel"
       width={900}

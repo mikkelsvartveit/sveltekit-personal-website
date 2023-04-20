@@ -1,4 +1,5 @@
 <script lang="ts">
+  import TextContent from "$lib/components/TextContent.svelte";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -9,7 +10,7 @@
   <title>{title} – Mikkel Svartveit</title>
 </svelte:head>
 
-<article class="mx-auto max-w-2xl">
+<TextContent>
   <h1
     class="mb-4 text-center font-serif text-4xl font-light tracking-wide text-gray-600 underline decoration-yellow-400 decoration-2 underline-offset-8"
   >
@@ -59,4 +60,4 @@
   >
     <Content />
   </div>
-</article>
+</TextContent>
