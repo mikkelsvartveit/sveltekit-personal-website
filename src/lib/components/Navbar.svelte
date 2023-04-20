@@ -21,7 +21,7 @@
   class:shadow={isScrolled}
 >
   <nav
-    class="mx-auto flex h-16 max-w-4xl flex-wrap items-center justify-between px-6"
+    class="mx-auto flex h-16 max-w-5xl flex-wrap items-center justify-between px-6"
   >
     <a
       href="/"
