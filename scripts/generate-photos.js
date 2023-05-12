@@ -4,18 +4,20 @@ import sharp from "sharp";
 const INPUT_DIR = "src/content/photos";
 const OUTPUT_DIR = "static/photos-optimized";
 
-// Remove output directory if it exists
-if (fs.existsSync(OUTPUT_DIR)) {
-  fs.rmSync(OUTPUT_DIR, { recursive: true });
+console.log("Checking for new images...");
+
+// Create output directory if it doesn't exist
+if (!fs.existsSync(OUTPUT_DIR)) {
+  fs.mkdirSync(OUTPUT_DIR);
 }
 
-// Create output directory
-fs.mkdirSync(`${OUTPUT_DIR}`);
-
 const photos = fs.readdirSync(INPUT_DIR);
-console.log("\nResizing photos...\n");
-
 photos.forEach((photo) => {
+  // Skip if photo already exists in output directory
+  if (fs.existsSync(`${OUTPUT_DIR}/${photo}`)) {
+    return;
+  }
+
   const inputPath = `${INPUT_DIR}/${photo}`;
   const outputPath = `${OUTPUT_DIR}/${photo}`;
 

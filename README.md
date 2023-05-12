@@ -6,7 +6,6 @@ My new personal website, powered by [SvelteKit](https://kit.svelte.dev), [Tailwi
 
 ```bash
 npm install
-npm run generate-photos # Run once to generate static images
 npm run dev
 ```
 
