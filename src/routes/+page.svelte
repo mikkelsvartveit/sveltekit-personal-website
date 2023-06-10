@@ -60,7 +60,7 @@
 
     <Paragraph>
       Want to get in touch?
-      <Link href="mailto:mail@mikkelsvartveit.com">Contact me.</Link>
+      <Link href="mailto:hi@mikkelsvartveit.com">Contact me.</Link>
     </Paragraph>
 
     <div class="mt-8 space-x-3">
