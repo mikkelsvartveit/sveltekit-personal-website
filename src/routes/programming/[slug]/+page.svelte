@@ -2,7 +2,7 @@
   import type { PageData } from "./$types";
 
   export let data: PageData;
-  const { title, date, website, repository, Content } = data;
+  const { title, date, website, repository, technologies, Content } = data;
 </script>
 
 <svelte:head>
@@ -16,12 +16,21 @@
     {title}
   </h1>
 
-  <p class="mx-auto mb-8 text-center text-sm text-gray-500">
+  <p class="mx-auto mb-4 text-center text-sm text-gray-500">
     {new Date(date).toLocaleDateString("en-US", {
       month: "long",
       year: "numeric",
     })}
   </p>
+
+  <div class="mb-8 flex flex-wrap justify-center">
+    {#each technologies.split(",") as technology}
+      <span
+        class="m-1 rounded-full bg-gray-200 px-3 py-0.5 text-sm font-semibold text-gray-600"
+        >{technology}</span
+      >
+    {/each}
+  </div>
 
   <div class="mb-6 flex flex-col items-center justify-center sm:flex-row">
     {#if website}

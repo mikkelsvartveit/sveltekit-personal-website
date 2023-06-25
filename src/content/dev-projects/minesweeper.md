@@ -3,7 +3,7 @@ slug: minesweeper
 title: JavaFX Minesweeper
 description: Basic implementation of Minesweeper in JavaFX.
 image: ./images/minesweeper.png
-technologies: Java
+technologies: Java,JavaFX
 repository: https://github.com/mikkelsvartveit/javafx-minesweeper
 date: 2021-05-03
 ---
