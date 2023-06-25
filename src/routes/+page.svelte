@@ -5,14 +5,24 @@
 
   const socialMedia = [
     {
-      name: "Facebook",
-      icon: "/icons/facebook-icon.png",
-      url: "https://facebook.com/profile.php?id=100006609016880",
+      name: "GitHub",
+      icon: "/icons/github-icon.png",
+      url: "https://github.com/mikkelsvartveit",
+    },
+    {
+      name: "LinkedIn",
+      icon: "/icons/linkedin-icon.svg",
+      url: "https://linkedin.com/in/mikkelsvartveit",
     },
     {
       name: "Twitter",
       icon: "/icons/twitter-icon.png",
       url: "https://twitter.com/mikkelsvartveit",
+    },
+    {
+      name: "Facebook",
+      icon: "/icons/facebook-icon.png",
+      url: "https://facebook.com/profile.php?id=100006609016880",
     },
     {
       name: "Instagram",
@@ -23,11 +33,6 @@
       name: "VSCO",
       icon: "/icons/vsco-icon.png",
       url: "https://vsco.co/mikkelsvartveit",
-    },
-    {
-      name: "GitHub",
-      icon: "/icons/github-icon.png",
-      url: "https://github.com/mikkelsvartveit",
     },
   ];
 </script>
