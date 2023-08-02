@@ -6,7 +6,7 @@
   $: isScrolled = scrollPosition > 0;
 
   const navbarContent = [
-    { name: "👨‍💻 Programming", href: "/programming" },
+    { name: "👨‍💻 Projects", href: "/programming" },
     { name: "📷 Photography", href: "/photography" },
     // { name: "📝 Articles", href: "/articles" },
   ];
