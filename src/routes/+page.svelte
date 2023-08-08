@@ -88,7 +88,7 @@
 
 <footer class="mb-12 mt-4 flex justify-center">
   <p class="text-xs text-gray-400">
-    Made in a breeze thanks to
+    Made with
     <Link href="https://kit.svelte.dev/" target="_blank">SvelteKit</Link>
     and
     <Link href="https://tailwindcss.com/" target="_blank">Tailwind CSS</Link>.
