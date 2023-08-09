@@ -31,7 +31,7 @@
   {#each projects as { slug, title, description, image }}
     <a
       href="/programming/{slug}"
-      class="mx-auto overflow-hidden rounded-lg bg-white pb-8 shadow-lg duration-100 hover:-translate-y-1 hover:shadow-xl"
+      class="mx-auto overflow-hidden rounded-lg bg-white pb-8 shadow-md duration-100 hover:-translate-y-1 hover:shadow-lg"
     >
       <img src={image} alt={title} width={1000} height={500} />
 

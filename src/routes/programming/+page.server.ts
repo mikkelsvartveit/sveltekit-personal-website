@@ -1,4 +1,4 @@
-import type { IProject } from "$lib/types/projects";
+import type { IProject } from "$lib/types";
 import type { ServerLoad } from "@sveltejs/kit";
 
 export const load = (async () => {
@@ -12,26 +12,8 @@ export const load = (async () => {
         const slug = path?.split("/")?.pop()?.split(".").shift();
 
         const project = (await importFn()) as { metadata: IProject };
-        const {
-          title,
-          description,
-          image,
-          technologies,
-          website,
-          repository,
-          date,
-        } = project.metadata;
 
-        return {
-          slug,
-          title,
-          description,
-          image,
-          technologies,
-          website,
-          repository,
-          date,
-        };
+        return { ...project.metadata, slug };
       })
     )
   ).sort((a, b) => ((a.date ?? 0) > (b.date ?? 0) ? -1 : 1));

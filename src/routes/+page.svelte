@@ -58,9 +58,10 @@
 
     <Paragraph>
       Here you will find some
-      <Link href="/programming">programming projects</Link>, and a small
+      <Link href="/programming">programming projects</Link>, a small
       <Link href="/photography">collection of photos</Link>
-      I'm proud of.
+      I'm proud of, and even a few
+      <Link href="/articles">articles I've written</Link>.
     </Paragraph>
 
     <Paragraph>
