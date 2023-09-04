@@ -12,7 +12,7 @@
 <svelte:head>
   <meta
     name="description"
-    content="Hi, I'm Mikkel 👋. I am a Computer Science student from Norway and this is my playground. Here you will find some programming projects, and a small collection of photos I'm proud of."
+    content="Hi, I'm Mikkel! I am a Computer Science student from Norway and this is my playground. Here you will find some programming projects, and a small collection of photos I'm proud of."
   />
 </svelte:head>
 
