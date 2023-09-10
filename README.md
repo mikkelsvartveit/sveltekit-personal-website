@@ -5,8 +5,9 @@ My new personal website, powered by [SvelteKit](https://kit.svelte.dev), [Tailwi
 ### Running development server
 
 ```bash
-npm install
-npm run dev
+npm install -g pnpm
+pnpm install
+pnpm dev
 ```
 
 ### Building for production
@@ -14,7 +15,7 @@ npm run dev
 To create a production version of the app:
 
 ```bash
-npm run build
+pnpm build
 ```
 
-The production build can be previewed locally with `npm run preview`.
+The production build can be previewed locally with `pnpm preview`.
